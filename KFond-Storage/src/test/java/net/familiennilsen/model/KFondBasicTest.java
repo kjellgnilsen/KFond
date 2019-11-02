@@ -1,7 +1,5 @@
 package net.familiennilsen.model;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -12,6 +10,7 @@ class KFondBasicTest {
 		KFondBasic t = new KFondBasic("Kjell","Boka");
 		Assertions.assertNotNull(t, "Object should exsist");
 		Assertions.assertEquals(t.getAuthor(), "Kjell");
+		Assertions.assertEquals(t.getTitle(), "Boka");
 		
 	}
 

@@ -19,5 +19,15 @@ public class KFondBasic {
 	@Id @GeneratedValue private String id;
 	@NonNull private String author;
 	@NonNull private String title;
+	public String getAuthor() {
+		
+		return author;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public String getId() {
+		return id;
+	}
 	
 }
