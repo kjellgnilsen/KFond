@@ -2,7 +2,7 @@
 Kulturfond
 
 Service for:
-  Storing Author+Title for accepted books by the Norwegian Arts Council
-  Updating storage from Excel files
-  Distributing JSON-data with 
-  Search and retrieval of Author+Title information
+  1. Storing Author+Title for accepted books by the Norwegian Arts Council
+  2. Updating storage from Excel files
+  3. Distributing JSON-data with 
+  4. Search and retrieval of Author+Title information
