@@ -1,32 +1,36 @@
 package net.familiennilsen.model;
 
-import java.net.URL;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
-@Data
-@AllArgsConstructor
 public class KFondUrl {
 	
-	public KFondUrl(URL url, String ordning, int year) {
+	public KFondUrl() {
+		super();
+	}
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	public String getOrdning() {
+		return ordning;
+	}
+	public void setOrdning(String ordning) {
+		this.ordning = ordning;
+	}
+	public int getYear() {
+		return year;
+	}
+	public void setYear(int year) {
+		this.year = year;
+	}
+	public KFondUrl(String url, String ordning, int year) {
+		super();
 		this.url = url;
 		this.ordning = ordning;
 		this.year = year;
-
 	}
-	private URL url;
+	private String url;
 	private String ordning;
 	private int year;
-	public URL getURL() {
-		
-		return url;
-	}
-	public String getOrdning() {
-		return this.ordning;
-	}
-	public int getYear() {
-		
-		return this.year;
-	}
+	
 }
