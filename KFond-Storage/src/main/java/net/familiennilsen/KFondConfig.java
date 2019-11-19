@@ -4,21 +4,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
-import net.familiennilsen.model.KFondUrler;
-
 @Configuration
-//@EnableConfigurationProperties 
-//@ConfigurationProperties(prefix = "")
 public class KFondConfig {
 
 	@Autowired
 	Environment environment;
-	
-	
 
 	private  Map<String, String> config = new HashMap<String, String>();
 

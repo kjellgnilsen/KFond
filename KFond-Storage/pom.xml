@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>net.familiennilsen</groupId>
-	<artifactId>KFond-Storage</artifactId>
+	<artifactId>KFond-Storage-Service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>KFond-Storage</name>
 	<description>KFond Storage service</description>

@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 
 import net.familiennilsen.model.KFondUrl;
 
@@ -32,6 +33,8 @@ public class FetchExcelContent {
 		KFondConfig f = ctx.getBean(KFondConfig.class);
 		 
 
+		
+		if (ctx != null) ((AbstractApplicationContext) ctx).close();
 		if (f != null) {
 			return f.getConfig().size();
 		} else {
