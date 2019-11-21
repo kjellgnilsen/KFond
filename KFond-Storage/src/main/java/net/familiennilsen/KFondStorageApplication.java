@@ -19,6 +19,7 @@ public class KFondStorageApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(KFondStorageApplication.class, args);
 		
+		
 	}
 
 }
