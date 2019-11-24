@@ -1,17 +1,18 @@
 package net.familiennilsen;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.env.Environment;
 
 @Configuration
+@EnableAutoConfiguration
+@ConfigurationProperties(prefix = "kfprops.servers.sv.2019")
 public class KFondConfig {
-
-	@Autowired
-	Environment environment;
 
 	private  Map<String, String> config = new HashMap<String, String>();
 
@@ -23,7 +24,5 @@ public class KFondConfig {
 		this.config = config;
 	}
 
-	public String getMessage() {
-		return environment.getProperty("message");
-	}
+	
 }

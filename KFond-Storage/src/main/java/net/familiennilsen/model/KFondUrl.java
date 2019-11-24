@@ -1,6 +1,10 @@
 package net.familiennilsen.model;
 
 public class KFondUrl {
+	private String url;
+	private String ordning;
+	private int year;
+	private String comment;
 	
 	public KFondUrl() {
 		super();
@@ -29,8 +33,12 @@ public class KFondUrl {
 		this.ordning = ordning;
 		this.year = year;
 	}
-	private String url;
-	private String ordning;
-	private int year;
+	public String getComment() {
+		return comment;
+	}
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+	
 	
 }
