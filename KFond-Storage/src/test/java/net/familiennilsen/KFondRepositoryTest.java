@@ -11,7 +11,7 @@ import net.familiennilsen.model.KFondBasic;
 class KFondRepositoryTest {
 
 	@Autowired
-	KFondRepository re;
+	KFondAuthorTitleRepository re;
 	@Test
 	void test() {
 		KFondBasic kf = new KFondBasic("Kjell", "Boka");

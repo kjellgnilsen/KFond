@@ -4,7 +4,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import net.familiennilsen.model.KFondBasic;
 
-public interface KFondRepository extends CrudRepository<KFondBasic, String> {
+public interface KFondAuthorTitleRepository extends CrudRepository<KFondBasic, String> {
 	
 
 }

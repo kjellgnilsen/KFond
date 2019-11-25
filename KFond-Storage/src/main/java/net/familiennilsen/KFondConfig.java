@@ -11,23 +11,23 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "kfprops")
 public class KFondConfig {
 
-	private  List<String> url = new ArrayList<String>();
+	private  String[] url = null;
 
 	public KFondConfig() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public KFondConfig(List<String> url) {
+	public KFondConfig(String[] url) {
 		super();
 		this.url = url;
 	}
 
-	public List<String> getUrl() {
+	public String[] getUrl() {
 		return url;
 	}
 
-	public void setUrl(List<String> url) {
+	public void setUrl(String[] url) {
 		this.url = url;
 	}
 
