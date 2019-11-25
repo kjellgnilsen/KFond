@@ -26,6 +26,7 @@ public class KFondStorageApplication {
 		}
 		
 		System.out.println("antall lagret: " + rep.count());
+		rep.findAll().forEach(a -> System.out.println(a.getUrl()));
 		rep.findAll().forEach(new Consumer<KFondUrlHash>() {
 
 			public void accept(KFondUrlHash t) {
