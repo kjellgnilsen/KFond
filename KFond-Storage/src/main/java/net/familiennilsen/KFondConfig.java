@@ -1,28 +1,38 @@
 package net.familiennilsen;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-@Configuration
+@Component
 @EnableAutoConfiguration
-@ConfigurationProperties(prefix = "kfprops.servers.sv.2019")
+@ConfigurationProperties(prefix = "kfprops")
 public class KFondConfig {
 
-	private  Map<String, String> config = new HashMap<String, String>();
+	private  List<String> url = new ArrayList<String>();
 
-	public Map<String, String> getConfig() {
-		return config;
+	public KFondConfig() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	public void setConfig(Map<String, String> config) {
-		this.config = config;
+	public KFondConfig(List<String> url) {
+		super();
+		this.url = url;
 	}
+
+	public List<String> getUrl() {
+		return url;
+	}
+
+	public void setUrl(List<String> url) {
+		this.url = url;
+	}
+
+	
+	
 
 	
 }
