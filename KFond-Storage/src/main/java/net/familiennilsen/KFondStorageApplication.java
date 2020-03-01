@@ -27,7 +27,7 @@ public class KFondStorageApplication {
 		
 		
 		InputStream stream=null;
-		System.out.println(config.getLocation().getLocation());
+		System.out.println(config.getLocation().getLocation().toString());
 		try {
 			stream = new URL(config.getLocation().toString()).openStream();
 		} catch (MalformedURLException e) {
